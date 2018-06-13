@@ -1,0 +1,20 @@
+appmakefile: MainC.o tongchan.o tongle.o luythua.o Giaithua.o
+	gcc -o appmakefile MainC.o tongchan.o tongle.o luythua.o Giaithua.o
+MainC.o: MainC.c mylib.h
+	gcc -c MainC.c
+tongchan.o: tongchan.c mylib.h
+	gcc -c tongchan.c
+tongle.o: tongle.c mylib.h
+	gcc -c tongle.c
+luythua.o: luythua.c mylib.h
+	gcc -c luythua.c
+Giaithua.o: Giaithua.c mylib.h
+	gcc -c Giaithua.c
+	
+
+
+
+
+
+
+
